@@ -22,7 +22,7 @@ dy1=dy[['guest_satisfaction_overall','dist','metro_dist','cleanliness_rating']]
 df=dy1.iloc[25::100]
 
 
-# Create line plot for overall gguest rating against distance from city centre, from metro and the cleanliness rating
+# Create line plot for overall guest rating against distance from city centre, from metro and the cleanliness rating
 plt.plot(df['guest_satisfaction_overall'], df['dist'], label='dist')
 plt.plot(df['guest_satisfaction_overall'], df['metro_dist'], label='metro_dist')
 plt.plot(df['guest_satisfaction_overall'], df['cleanliness_rating'], label='cleanliness_rating')
