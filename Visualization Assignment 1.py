@@ -40,10 +40,10 @@ plt.show()
 df = pd.read_csv("amsterdam_weekdays.csv")
 df1=df.iloc[0::150]
 
-# Create a bar chart using matplotlib
+
 
 def read_csv(filename):
-    """Reads in a CSV file and returns a pandas DataFrame."""
+    #Read the CSV file and returns a pandas DataFrame
     df = pd.read_csv("amsterdam_weekdays.csv")
     return df
 
