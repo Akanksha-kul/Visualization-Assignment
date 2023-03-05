@@ -27,11 +27,11 @@ plt.plot(df['guest_satisfaction_overall'], df['dist'], label='dist')
 plt.plot(df['guest_satisfaction_overall'], df['metro_dist'], label='metro_dist')
 plt.plot(df['guest_satisfaction_overall'], df['cleanliness_rating'], label='cleanliness_rating')
 
-plt.title('Overall ratings given by guests')
-plt.ylabel('Factors for rating')
-plt.xlabel('Guest Ratings')
+plt.title('Overall ratings given by guests')#Add title for the plot
+plt.ylabel('Factors for rating')#Add the y label
+plt.xlabel('Guest Ratings')#Add the x label
 plt.legend()
-plt.show()
+plt.show()#Show the line graph
 
 
 
@@ -51,10 +51,10 @@ def read_csv(filename):
 
 sns.set(rc={'figure.figsize':(11.6,8.27)})
 ax=sns.pointplot(x="realSum",y="person_capacity",data=df1)
-plt.xlabel("Prices of the listing")
-plt.ylabel("Person Capacity")
-plt.title("Price of Listing as per Person Capacity")
-plt.show()
+plt.xlabel("Prices of the listing")#Add x label for the plot
+plt.ylabel("Person Capacity")#Add y label for the plot
+plt.title("Price of Listing as per Person Capacity")#Add title for the plot
+plt.show()#Show the point plot
 
 
 
@@ -80,8 +80,8 @@ for i in range (len(data["room_type"])):
 x=[priv_room, ent_home_apt, shared_room]
 y=['Private Room','Entire Home or Apartment', 'Shared Room']
 plt.pie(x,labels=y,autopct="%1.0f%%")
-plt.title('Percentage of the room types usually booked by the guests')
+plt.title('Percentage of the room types usually booked by the guests')#Add title for the plot
 
 
-plt.show()
+plt.show()#Show the pie chart
 
